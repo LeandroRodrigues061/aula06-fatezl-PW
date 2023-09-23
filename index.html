@@ -9,9 +9,21 @@
         .midia{
             display: flex;
         }
+        form{
+            border-style: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
+
+    <h2>Inserindo Multimidias</h2>
 
     <div class="midia">
     
@@ -25,12 +37,134 @@
 
     </div>
 
-    
+    <audio src="abstract-future-bass-162604.mp3" controls> </audio>
+
+    <h2>Criando um Link</h2>
     <a href="https://www.google.com/">Google</a>
 
-    
-    <audio src="abstract-future-bass-162604.mp3" controls> </audio>
-    
+    <br>
+    <hr>
+
+    <h2>Criando uma tabela</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Leandro</td>
+                <td>20 Anos</td>
+            </tr>
+            <tr>
+                <td>Luca</td>
+                <td>19 anos</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Há um total de 2 registros</td>
+        </tfoot>
+    </table>
+
+    <div>
+        <h2>Criando listas</h2>
+        <h3>Lista de campeões mundiais</h3>
+        <ol>
+            <li>Brasil</li>
+            <li>Alemanha</li>
+            <li>Italia</li>
+            <li>Argentina</li>
+            <li>França</li>
+            <li>Uruguai</li>
+            <li>Espanha</li>
+            <li>Inglaterra</li>
+        </ol>
+
+        <ul>
+            <li>Brasil</li>
+            <li>Alemanha</li>
+            <li>Italia</li>
+            <li>Argentina</li>
+            <li>França</li>
+            <li>Uruguai</li>
+            <li>Espanha</li>
+            <li>Inglaterra</li>
+        </ul>
+    </div>
+
+    <center>
+
+        <form action="#" method="POST">
+            <label> Nome: <br>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+            </label>
+                <br><br>
+            <label>Nascimento: <br>
+                <input type="date" name="nasc" id="nasc" placeholder="Insira sua idade">
+            </label>
+                <br><br>
+            <label>Email: <br>
+                <input type="email" name="email" id="email" placeholder="Insira seu E-mail"> 
+            </label>
+            <br><br>
+            <label>Senha: <br>
+                <input type="password" name="senha" id="senha" placeholder="Insira sua senha">
+            </label>
+                <br><br>
+                <label>CPF: <br>
+                    <input type="number" name="CPF" id="CPF" placeholder="Insira seu CPF">
+                </label>
+                <br><br>
+                <label>Sexo:</label>
+                <input type="radio" value="Masculino" id="radio_sex_masc" name="radio_sexo">Masculino
+                <input type="radio" value="Feminino" id="radio_sex_fem" name="radio_sexo"> Feminino
+                <input type="radio" value="Indefinido" id="radio_sex_ind" name="radio_sexo"> Indefinido
+                <br> <br>
+            <label> Escolha seu curso:</label><br>
+                <label><input type="radio" name="radio" id="um">DSM</label><br>
+                <label><input type="radio" name="radio" id="dois">ADS</label><br>
+                <label><input type="radio" name="radio" id="tres">ADM</label><br>
+
+                <br> 
+
+                <label>Cor favorita: <br>
+                    <input type="color" id="Cor" name="cor">
+                </label>
+                <br><br>
+                <label>Minhas Linguagens favoritas: <br></label>
+                <select name="linguagem_favorita" id="linguagem_fvorita" multiple>
+                    <option value="Java">Java</option>
+                    <option value="Phyton">Phyton</option>
+                    <option value="Php">Php</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+                <br><br>
+                <label>Idiomas favoritos:</label>
+                <select name="idiomas_favoritos" id="idiomas_fvoritos">
+                    <option value="Portugues">Português</option>
+                    <option value="Ingles">Inglês</option>
+                    <option value="Mandarin">Mandarin</option>
+                    <option value="Espanhol">Espanhol</option>
+                </select>
+                <br><br>
+                <label>Comentários: <br>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Comentários"></textarea>
+                </label>
+                <br><br>
+                <label>
+                    <input type="checkbox" name="aceite" id="aceite" required>Aceite os termos
+                </label>
+                <br><br>
+                <input type="submit" value="Enviar"> <input type="reset" value="Reset">
+        </form>
+
+        <br>
+        <br>
+    </center>
 
 
 </body>
